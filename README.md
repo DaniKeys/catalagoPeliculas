@@ -1,5 +1,5 @@
 # Catalago Peliculas
-> Consultas sobre catalogo de películas empleando programación funcional 
+> Consultas sobre catalogo de películas empleando programación funcional en java
 
 ## Habilidades
 
