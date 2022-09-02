@@ -21,7 +21,7 @@ public class Main {
 	        					.filter(a -> a.getDirector().equals("Steven Spielberg"))
 	        					.map(t -> t.getTitulo())
 	        					.collect(Collectors.joining(", ",
-                    "Nombres peliculas Steven Spilberg: ", ""));
+                                                        "Nombres peliculas Steven Spilberg: ", ""));
 	        
 	        System.out.println(listaDeSS);
 	        
@@ -29,13 +29,13 @@ public class Main {
 	        List<String> orderAsc = peliculas.stream()	
 	        								.map(p -> p.getTitulo())	
 	        								.sorted((p1,p2) -> p1.compareTo(p2))
-	                                        .collect(Collectors.toList());	
+	                                                                        .collect(Collectors.toList());	
 	        
 	        orderAsc.forEach(x-> System.out.println(x));
 	        
 	       //Mostrar por pantalla el estreno más reciente
 	        Optional<Pelicula> mayor = peliculas.stream()
-	        									.max((p1, p2) -> Integer.compare(p1.getEstreno(), p2.getEstreno()));
+	                                            .max((p1, p2) -> Integer.compare(p1.getEstreno(), p2.getEstreno()));
 	        String isPresent1 = (mayor.isPresent()) ? String.valueOf(mayor.get()) : "No se han encontrado peliculas que cumplan el requisito";
 	        
 	        System.out.println(isPresent1);
