@@ -3,7 +3,7 @@
 
 ## Habilidades
 
-Operaciones stream, lambdas, reduccion a partir de metodos de Optional, recoleccion tanto en listas como en String, Ordenamiento, transformación con map, operaciones terminales e intermedias
+Operaciones stream, lambdas, reduccion a partir de metodos de Optional, recoleccion tanto en listas como en String, Ordenamiento y comparacion con INterfaz Comaparator, transformación con map, operaciones terminales e intermedias
 
 ## Consultas
 
