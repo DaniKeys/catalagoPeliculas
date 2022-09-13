@@ -3,6 +3,7 @@ public class Pelicula {
 	    private String titulo;
 	    private String director;
 	    private int estreno;
+	    private boolean chord;
 	    
 	    public Pelicula(String titulo, String director, int estreno)
 	    {

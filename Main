@@ -9,6 +9,13 @@ public class Main {
 	        peliculas.add(new Pelicula("Origen", "Christopher Nolan", 2010));
 	        peliculas.add(new Pelicula("L.A. Confidential", "Curtis Hanson", 1997));
 	        
+	          List<Pelicula> peliculas = new ArrayList<>();
+	        peliculas.add(new Pelicula("E.T.", "Steven Spielberg", 1982));
+	        peliculas.add(new Pelicula("Avatar", "James Cameron", 2009));
+	        peliculas.add(new Pelicula("Salvar al soldado Ryan", "Steven Spielberg", 1998));
+	        peliculas.add(new Pelicula("Origen", "Christopher Nolan", 2010));
+	        peliculas.add(new Pelicula("L.A. Confidential", "Curtis Hanson", 1997));
+	        
 	        //Obtener un sublistado con las películas estrenadas en el siglo XXI (a partir del año 2000, inclusive)
 	        List<Pelicula> estrenosAge =
 	        					peliculas.stream().filter(p -> p.getEstreno() >= 2000)
@@ -23,7 +30,6 @@ public class Main {
 	        					.collect(Collectors.joining(", ",
                                                         "Nombres peliculas Steven Spilberg: ", ""));
 	        
-	        System.out.println(listaDeSS);
 	        
 	       //Obtener un sublistado con los nombres de las películas, ordenados alfabéticamente
 	        List<String> orderAsc = peliculas.stream()	
@@ -38,7 +44,7 @@ public class Main {
 	                                            .max((p1, p2) -> Integer.compare(p1.getEstreno(), p2.getEstreno()));
 	        String isPresent1 = (mayor.isPresent()) ? String.valueOf(mayor.get()) : "No se han encontrado peliculas que cumplan el requisito";
 	        
-	        System.out.println(isPresent1);
+	       
 	        
 	    }
 	
